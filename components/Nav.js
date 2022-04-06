@@ -4,15 +4,15 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-5"
+      className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-5"
       style={{ height: "80px" }}
     >
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#">
+      <div className="container-fluid">
+        <a className="navbar-brand fs-2" href="#">
           DroidTech
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -20,24 +20,18 @@ const Nav = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
-                Home
-              </a>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="ms-auto">
+            <li className="nav-item d-inline-block px-3 fs-4 text-warning">
+              <Link href="/">Home</Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                About
-              </a>
+            <li className="nav-item d-inline-block px-3 fs-4 text-warning">
+              <Link href="/about">About</Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Contact
-              </a>
+            <li className="nav-item d-inline-block px-3 fs-4 text-warning">
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
