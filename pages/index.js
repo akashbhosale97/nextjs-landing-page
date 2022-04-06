@@ -4,7 +4,7 @@ export default function Home({ data }) {
   return (
     <div className={`${styles.home} container`}>
       {data.map((item) => (
-        <div key={item.id} className="my-5 p-3 shadow">
+        <div key={item.id} className="my-5 p-3 shadow rounded-3">
           <div className="d-flex justify-content-start align-items-center">
             <p className="fw-bold fs-2 me-2">{item.id}.</p>
             <p className="fw-bold fs-2 text-dark">{item.title}</p>
